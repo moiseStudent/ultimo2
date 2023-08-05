@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web - {% block title %}{% endblock %} </title>
+</head>
+<style type="text/css">
+	body {
+		background: #0000FF;
+	}
+	h1 {
+		font-size: 5em;
+		color: #FFFFFF;
+	}
+
+	h2 {
+		color: red;
+	}
+
+	div {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	div p {
+		font-size: 3em;
+		color:white;
+	}
+
+
+</style>
+<body>
+
+    {% block content %}
+    <!-- Bloque de contenido -->
+    {% endblock %}
+
+</body>
+</html>
